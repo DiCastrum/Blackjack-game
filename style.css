@@ -1,0 +1,125 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    border: 1px solid black;
+}
+
+.header {
+    background-image: url(background2.png);
+    background-size: 100%;
+    padding: 20px;   
+}
+
+.main {
+    background: url(Untitled.png);
+    background-size: 100%;
+}
+
+#blackjack {
+    user-select: none;
+}
+
+.dealer-score, .player-score {
+    padding: 5px;
+    color: black;
+    margin: 0px;
+    color: white;
+    user-select: none;
+}
+
+
+h6 {       
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px; 
+    color: white; 
+    user-select: none;
+}
+
+#dealer-hand, #player-hand {
+    display: flex;
+    padding: 5px;    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    color: white; 
+    min-height: 120px;
+    user-select: none;
+}
+
+#backcard {
+  max-width: 85px;
+  max-height: 110px;
+  min-width: 50px;
+  min-height: 80px;
+  margin: 5px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  flex: 1;
+  padding:0px;
+  user-select: none;
+  position: relative;
+  border-radius: 10%;
+  user-select: none;
+
+}
+
+.card {
+  background-color: #f1f1f1;
+  max-width: 60px;
+  max-height: 90px;
+  min-width: 50px;
+  min-height: 80px;
+  margin: 5px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  flex: 1;
+  padding:10px;
+  user-select: none;
+  position: relative;
+  border-radius: 10%;
+}
+
+
+.card.red {
+    color: red;
+}
+
+.card.black {
+    color: black;
+}
+
+.card::before,
+.card::after {
+    position: absolute;
+    content: attr(data-value);
+    font-size: 1rem;
+}
+
+.card::before {
+    top: -1.5rem;
+    left: 0rem;
+}
+
+.card::after {
+    bottom: -1.5rem;
+    right: 0rem;
+    transform: rotate(180deg);
+}
+
+.button, .new-button {
+    display: flex;    
+    padding: 5px;    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+#hit {
+    margin-right: 5px;
+}
+
+
