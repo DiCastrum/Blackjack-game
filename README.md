@@ -21,7 +21,7 @@ cd Blackjack-game
 
 3. Start 
 ```
-using start index.HTML
+using start index.html
 
 or
 
